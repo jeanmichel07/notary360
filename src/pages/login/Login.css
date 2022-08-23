@@ -1,0 +1,27 @@
+.form-login{
+    width: 40%;
+    padding: 15px 20px 15px 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 6px 2px #ababab;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+.btn-form,.div-remember{
+    margin-top: 20px;
+}
+.div-error{
+    padding: 10px;
+}
+.div-logo{
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .form-login{
+        width: 98%;
+        padding: 15px 20px 15px 20px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 6px 2px #ababab;
+        margin-left: 1%;
+        margin-top: 5%;
+    }
+}

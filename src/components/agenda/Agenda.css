@@ -1,0 +1,9 @@
+.agenda-section{
+    height: 90vh;
+    width: 17.5vw;
+}
+@media (max-width: 767px) {
+    .agenda-section{
+        display: none;
+    }
+}
