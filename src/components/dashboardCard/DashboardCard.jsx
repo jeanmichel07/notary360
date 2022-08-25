@@ -1,9 +1,18 @@
 import React from "react";
 import Paper from "@mui/material/Paper";
 import useStyles from "./style";
+import { Box } from "@mui/material";
 
 const DashboardCard = (props) => {
-  const { children, showRightContent, title, icon, height, whiteBg } = props;
+  const {
+    children,
+    showRightContent,
+    title,
+    icon,
+    height,
+    whiteBg,
+    withoutPadding,
+  } = props;
   const classes = useStyles();
   const paperElevation = 16;
   const headerStyles = whiteBg ? classes.headerWhite : classes.header;
@@ -21,7 +30,7 @@ const DashboardCard = (props) => {
 
         {showRightContent && <div>Right</div>}
       </div>
-      <div className={classes.content}>{children}</div>
+      <Box style={{ padding: withoutPadding ? 0 : 10 }}>{children}</Box>
     </Paper>
   );
 };

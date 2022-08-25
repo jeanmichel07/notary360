@@ -8,14 +8,17 @@ import "jquery/dist/jquery.min.js";
 import "bootstrap/dist/js/bootstrap.min.js";
 import { ThemeProvider } from "@mui/material";
 import theme from "./theme";
+import { MantineProvider } from "@mantine/core";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <ThemeProvider theme={theme}>
-    <BrowserRouter>
-      <div className="container-fluid">
-        <App />
-      </div>
-    </BrowserRouter>
+    <MantineProvider withGlobalStyles withNormalizeCSS>
+      <BrowserRouter>
+        <div className="container-fluid">
+          <App />
+        </div>
+      </BrowserRouter>
+    </MantineProvider>
   </ThemeProvider>
 );

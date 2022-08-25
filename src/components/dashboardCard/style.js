@@ -1,9 +1,7 @@
 import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles({
-  content: {
-    padding: 10,
-  },
+  content: {},
   header: {
     display: "flex",
     flexDirection: "row",
