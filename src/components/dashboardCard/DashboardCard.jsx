@@ -10,7 +10,7 @@ const DashboardCard = (props) => {
 
   return (
     <Paper
-      sx={{ borderTopRadius: 2, height: height ?? 285, cursor: "pointer" }}
+      sx={{ borderRadius: 2, height: height ?? 285, cursor: "pointer" }}
       elevation={paperElevation}
     >
       <div className={headerStyles}>
