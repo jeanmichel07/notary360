@@ -19,7 +19,14 @@ const FolderEvolution = (props) => {
         icon={<FolderIcon sx={sxStyles.iconSize} />}
       >
         <div className={classes.items}>
-          <Box sx={{ flex: 0.6, backgroundColor: "#dbe6ef", height: 125 }}>
+          <Box
+            sx={{
+              flex: 0.6,
+              padding: 1,
+              backgroundColor: "#dbe6ef",
+              height: 125,
+            }}
+          >
             Left
           </Box>
           <Box sx={{ flex: 0.5 }} style={{ transform: "scale(0.8)" }}>
@@ -27,7 +34,14 @@ const FolderEvolution = (props) => {
           </Box>
         </div>
         <div className={classes.items}>
-          <Box sx={{ flex: 0.6, backgroundColor: "#dbe6ef", height: 125 }}>
+          <Box
+            sx={{
+              flex: 0.6,
+              padding: 1,
+              backgroundColor: "#dbe6ef",
+              height: 125,
+            }}
+          >
             Left
           </Box>
           <Box sx={{ flex: 0.5 }} style={{ transform: "scale(0.8)" }}>
