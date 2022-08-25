@@ -17,7 +17,7 @@ const useStyles = makeStyles({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
-    backgroundColor: "#f4f4ff",
+    backgroundColor: "#f2f2f4",
     padding: "5px 20px 5px 20px",
   },
   icon: {},
