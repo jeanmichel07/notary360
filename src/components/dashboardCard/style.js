@@ -2,7 +2,7 @@ import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles({
   content: {
-    padding: 5,
+    padding: 10,
   },
   header: {
     display: "flex",
@@ -10,7 +10,7 @@ const useStyles = makeStyles({
     alignItems: "center",
     justifyContent: "space-between",
     backgroundColor: "#dbe6ef",
-    padding: "5px 20px 5px 20px",
+    padding: "5px 20px 5px 10px",
   },
   headerWhite: {
     display: "flex",

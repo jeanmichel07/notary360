@@ -5,4 +5,8 @@ const useStyles = makeStyles({
   secondColumn: {},
 });
 
+export const sxStyles = {
+  iconSize: { color: "blue", height: 20, width: 20 },
+};
+
 export default useStyles;
