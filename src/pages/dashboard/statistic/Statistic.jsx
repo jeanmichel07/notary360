@@ -16,6 +16,10 @@ const Statistic = (props) => {
         title="Stats dossier en cours"
         icon={<DonutSmallIcon sx={sxStyles.iconSize} />}
       >
+        <div className={classes.row}>
+          <p className={classes.statusCollab}>Par Collaborateur</p>
+          <p className={classes.status}>Par Statut</p>
+        </div>
         <PieChart />
       </DashboardCard>
     </Box>

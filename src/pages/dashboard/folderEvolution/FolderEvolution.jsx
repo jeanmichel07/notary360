@@ -14,6 +14,7 @@ const FolderEvolution = (props) => {
   return (
     <Box gridColumn="span 6">
       <DashboardCard
+        showRightContent
         withoutPadding
         height={300}
         title="Evolution des dossiers"

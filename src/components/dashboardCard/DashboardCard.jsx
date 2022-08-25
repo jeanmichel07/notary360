@@ -19,7 +19,13 @@ const DashboardCard = (props) => {
 
   return (
     <Paper
-      sx={{ borderRadius: 2, height: height ?? 285, cursor: "pointer" }}
+      sx={{
+        borderRadius: 2,
+        height: height ?? 285,
+        cursor: "pointer",
+        boxShadow:
+          "0px 3px 3px -2px rgb(0 0 0 / 20%), 0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%)",
+      }}
       elevation={paperElevation}
     >
       <div className={headerStyles}>
@@ -28,7 +34,7 @@ const DashboardCard = (props) => {
           <div className={classes.title}>{title}</div>
         </div>
 
-        {showRightContent && <div>Right</div>}
+        {showRightContent && <p className={classes.status}>Voir tout</p>}
       </div>
       <Box style={{ padding: withoutPadding ? 0 : 10 }}>{children}</Box>
     </Paper>

@@ -29,6 +29,16 @@ const useStyles = makeStyles({
     fontSize: 14,
     marginTop: 4,
   },
+  status: {
+    padding: "2px 7px 2px 7px",
+    fontSize: 10,
+    fontWeight: "bolder",
+    backgroundColor: "#228be630",
+    borderRadius: 10,
+    color: "blue",
+    marginBottom: 0,
+    marginLeft: 5,
+  },
 });
 
 export default useStyles;
