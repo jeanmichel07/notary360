@@ -15,7 +15,18 @@ const Actuality = (props) => {
         title="Actualite"
         icon={<ArticleIcon sx={{ color: "yellow" }} />}
       >
-        Details
+        <Box sx={{ overflow: "hidden", overflowY: "scroll", height: 225 }}>
+          <p className={classes.title}>
+            Teletravail : Soluta, nemo, corrupti consequuntur.
+          </p>
+
+          <p className={classes.description}>
+            TLorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur,
+            delectus voluptatum? Quam, asperiores in! Soluta, nemo, corrupti
+            consequuntur laudantium, architecto alias tenetur debitis in quia
+            ipsam accusamus consequatur. Nam, ad.
+          </p>
+        </Box>
       </DashboardCard>
     </Box>
   );
