@@ -13,27 +13,44 @@ const Dashboard = () => {
     <Box sx={{ width: 1, padding: 3 }}>
       <Box display="grid" gridTemplateColumns="repeat(12, 1fr)" gap={3}>
         <Box gridColumn="span 6">
-          <DashboardCard title="Mon activite" icon={<TopicIcon />} />
+          <DashboardCard
+            title="Mon activite"
+            icon={<TopicIcon color="red" sx={{ color: "blue" }} />}
+          />
         </Box>
 
         <Box gridColumn="span 6">
-          <DashboardCard title="Evolution des dossiers" icon={<FolderIcon />} />
+          <DashboardCard
+            title="Evolution des dossiers"
+            icon={<FolderIcon sx={{ color: "blue" }} />}
+          />
         </Box>
 
         <Box marginTop={1} gridColumn="span 4">
-          <DashboardCard title="Mes taches" icon={<AssignmentIcon />} />
+          <DashboardCard
+            title="Mes taches"
+            icon={<AssignmentIcon sx={{ color: "blue" }} />}
+          />
         </Box>
         <Box marginTop={1} gridColumn="span 4">
           <DashboardCard
             title="Stats dossier en cours"
-            icon={<DonutSmallIcon />}
+            icon={<DonutSmallIcon sx={{ color: "blue" }} />}
           />
         </Box>
         <Box marginTop={1} gridColumn="span 2">
-          <DashboardCard title="Meteo" icon={<LightModeIcon />} />
+          <DashboardCard
+            whiteBg
+            title="Meteo"
+            icon={<LightModeIcon sx={{ color: "yellow" }} />}
+          />
         </Box>
         <Box marginTop={1} gridColumn="span 2">
-          <DashboardCard title="Actualite" icon={<ArticleIcon />} />
+          <DashboardCard
+            whiteBg
+            title="Actualite"
+            icon={<ArticleIcon sx={{ color: "yellow" }} />}
+          />
         </Box>
       </Box>
     </Box>
