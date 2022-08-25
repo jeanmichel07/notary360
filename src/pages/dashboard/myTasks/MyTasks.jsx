@@ -4,20 +4,37 @@ import AssignmentIcon from "@mui/icons-material/Assignment";
 import Box from "@mui/material/Box";
 import DashboardCard from "../../../components/dashboardCard/DashboardCard";
 import { sxStyles } from "../style";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemText from "@mui/material/ListItemText";
-import ListItemAvatar from "@mui/material/ListItemAvatar";
-import Avatar from "@mui/material/Avatar";
-import ImageIcon from "@mui/icons-material/Image";
-import WorkIcon from "@mui/icons-material/Work";
-import BeachAccessIcon from "@mui/icons-material/BeachAccess";
-import { ListItemIcon } from "@mui/material";
-import CheckBoxOutlineBlankIcon from "@mui/icons-material/CheckBoxOutlineBlank";
+import MyTaskItem from "../../../components/myTaskItem/MyTaskItem";
 
 const MyTasks = (props) => {
   const {} = props;
   const classes = useStyles();
+  const items = [
+    {
+      id: 1,
+      label: "Faire un point avec l'equipe",
+      date: "23/12/2022",
+      status: "Terminé",
+    },
+    {
+      id: 2,
+      label: "Faire un point avec l'equipe",
+      date: "23/12/2022",
+      status: "Terminé",
+    },
+    {
+      id: 3,
+      label: "Faire un point avec l'equipe",
+      date: "23/12/2022",
+      status: "Terminé",
+    },
+    {
+      id: 4,
+      label: "Faire un point avec l'equipe",
+      date: "23/12/2022",
+      status: "Terminé",
+    },
+  ];
 
   return (
     <Box gridColumn="span 4">
@@ -25,37 +42,16 @@ const MyTasks = (props) => {
         title="Mes taches"
         icon={<AssignmentIcon sx={sxStyles.iconSize} />}
       >
-        <List
-          sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}
-        >
-          <ListItem>
-            <ListItemIcon>
-              <CheckBoxOutlineBlankIcon />
-            </ListItemIcon>
-            <ListItemText
-              primary="Faire un point avec l'equipe"
-              secondary="23/12/2022"
+        <div>
+          {items.map((item) => (
+            <MyTaskItem
+              key={item.id}
+              label={item.label}
+              date={item.date}
+              status={item.status}
             />
-          </ListItem>
-          <ListItem>
-            <ListItemIcon>
-              <CheckBoxOutlineBlankIcon />
-            </ListItemIcon>
-            <ListItemText
-              primary="Faire un point avec l'equipe"
-              secondary="23/12/2022"
-            />
-          </ListItem>
-          <ListItem>
-            <ListItemIcon>
-              <CheckBoxOutlineBlankIcon />
-            </ListItemIcon>
-            <ListItemText
-              primary="Faire un point avec l'equipe"
-              secondary="23/12/2022"
-            />
-          </ListItem>
-        </List>
+          ))}
+        </div>
       </DashboardCard>
     </Box>
   );

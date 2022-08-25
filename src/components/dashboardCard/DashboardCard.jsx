@@ -14,7 +14,7 @@ const DashboardCard = (props) => {
     withoutPadding,
   } = props;
   const classes = useStyles();
-  const paperElevation = 16;
+  const paperElevation = 24;
   const headerStyles = whiteBg ? classes.headerWhite : classes.header;
 
   return (
