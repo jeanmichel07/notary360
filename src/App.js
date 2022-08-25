@@ -10,15 +10,15 @@ import useStyles from "./style";
 
 const App = () => {
   const classes = useStyles();
-  // if (isAuth()) {
-  //   return (
-  //     <div className="container-fluid">
-  //       <Routes>
-  //         <Route path="/" element={<Login />} />
-  //       </Routes>
-  //     </div>
-  //   );
-  // }
+  if (isAuth()) {
+    return (
+      <div className="container-fluid">
+        <Routes>
+          <Route path="/" element={<Login />} />
+        </Routes>
+      </div>
+    );
+  }
 
   return (
     <div className={classes.container}>
